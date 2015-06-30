@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:objc"
+      name = "objc">
+      <Group
+         location = "group:DataManager"
+         name = "DataManager">
+         <FileRef
+            location = "group:BCVIPERDataManager.h">
+         </FileRef>
+         <FileRef
+            location = "group:BCVIPERDataManager.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Logic"
+         name = "Logic">
+         <Group
+            location = "group:Interactor"
+            name = "Interactor">
+            <FileRef
+               location = "group:BCVIPERInteractor.h">
+            </FileRef>
+            <FileRef
+               location = "group:BCVIPERInteractor.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Presenter"
+            name = "Presenter">
+            <FileRef
+               location = "group:BCVIPERPresenter.h">
+            </FileRef>
+            <FileRef
+               location = "group:BCVIPERPresenter.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Wireframe"
+            name = "Wireframe">
+            <FileRef
+               location = "group:BCVIPERWireframe.h">
+            </FileRef>
+            <FileRef
+               location = "group:BCVIPERWireframe.m">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Protocols"
+         name = "Protocols">
+         <FileRef
+            location = "group:BCVIPERProtocols.h">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:View"
+         name = "View">
+         <FileRef
+            location = "group:BCVIPERViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:BCVIPERViewController.m">
+         </FileRef>
+         <FileRef
+            location = "group:BCVIPERViewController.xib">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
