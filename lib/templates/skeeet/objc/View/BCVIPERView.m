@@ -40,15 +40,10 @@
 
 #pragma mark  - UI callbacks
 
--(IBAction)onInviteButton:(id)sender
-{
-    
-}
 
 
--(IBAction)onCloseButton:(id)sender
-{
-    
-}
+#pragma mark  - BCVIPERViewProtocol
+
+
 
 @end
