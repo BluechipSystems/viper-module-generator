@@ -13,6 +13,7 @@
 @protocol BCVIPERDataManagerInputProtocol;
 @protocol BCVIPERDelegate;
 
+@protocol BCLocalDataStore;
 
 
 @protocol BCVIPERViewProtocol
@@ -59,6 +60,8 @@
 @end
 
 @protocol BCVIPERDataManagerInputProtocol <VIPERDataManagerInputProtocol>
+
+@property(nonatomic, weak) id<BCLocalDataStore> localDataStore;
 /**
  * Add here your methods for communication INTERACTOR -> LOCLDATAMANAGER
  */
