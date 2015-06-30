@@ -1,6 +1,6 @@
 //
-// Created by VIPER
-// Copyright (c) 2015 VIPER. All rights reserved.
+// Created by AUTHOR
+// Copyright (c) 2015 AUTHOR. All rights reserved.
 //
 
 @import Foundation;

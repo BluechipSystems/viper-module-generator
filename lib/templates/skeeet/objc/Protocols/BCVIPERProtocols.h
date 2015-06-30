@@ -1,6 +1,6 @@
 //
-// Created by VIPER
-// Copyright (c) 2015 VIPER. All rights reserved.
+// Created by AUTHOR
+// Copyright (c) 2015 AUTHOR. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,21 +11,13 @@
 @protocol BCVIPERViewProtocol;
 @protocol BCVIPERPresenterProtocol;
 @protocol BCVIPERDataManagerInputProtocol;
+@protocol BCVIPERDelegate;
 
 
-
-//@class BCVIPERWireFrame;
-//@protocol BCVIPERWireFrameProtocol
-//@required
-//+ (void)presentVIPERModuleFrom:(id)fromView;
-///**
-// * Add here your methods for communication PRESENTER -> WIREFRAME
-// */
-//@end
 
 @protocol BCVIPERViewProtocol
 @required
-@property (nonatomic, strong) id <BCVIPERPresenterProtocol> presenter;
+@property(nonatomic, strong) id <BCVIPERPresenterProtocol> presenter;
 /**
  * Add here your methods for communication PRESENTER -> VIEWCONTROLLER
  */
@@ -35,9 +27,10 @@
 
 @protocol BCVIPERPresenterProtocol
 @required
-@property (nonatomic, weak) id <BCVIPERViewProtocol> view;
-@property (nonatomic, strong) id <BCVIPERInteractorInputProtocol> interactor;
-//@property (nonatomic, strong) id <BCVIPERWireFrameProtocol> wireFrame;
+@property(nonatomic, weak  ) id <BCVIPERViewProtocol> view;
+@property(nonatomic, strong) id <BCVIPERInteractorInputProtocol> interactor;
+@property(nonatomic, weak  ) id <BCVIPERDelegate> moduleDelegate;
+
 /**
  * Add here your methods for communication VIEWCONTROLLER -> PRESENTER
  */
@@ -51,8 +44,8 @@
 
 @protocol BCVIPERInteractorInputProtocol
 @required
-@property (nonatomic, weak) id <BCVIPERInteractorOutputProtocol> presenter;
-@property (nonatomic, strong) id <BCVIPERDataManagerInputProtocol> localDataManager;
+@property(nonatomic, weak)   id <BCVIPERInteractorOutputProtocol> presenter;
+@property(nonatomic, strong) id <BCVIPERDataManagerInputProtocol> localDataManager;
 /**
  * Add here your methods for communication PRESENTER -> INTERACTOR
  */

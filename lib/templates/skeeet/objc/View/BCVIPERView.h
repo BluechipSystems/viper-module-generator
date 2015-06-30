@@ -11,6 +11,6 @@
 
 @interface BCVIPERView : UIViewController <BCVIPERViewProtocol>
 
-@property (nonatomic, strong) id <BCVIPERPresenterProtocol> presenter;
+@property (nonatomic, strong) InjectedProtocol(BCVIPERPresenterProtocol) presenter;
 
 @end

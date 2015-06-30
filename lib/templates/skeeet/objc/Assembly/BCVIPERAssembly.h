@@ -1,22 +1,23 @@
 //
-// Created by VIPER
-// Copyright (c) 2015 VIPER. All rights reserved.
+// Created by AUTHOR
+// Copyright (c) 2015 AUTHOR. All rights reserved.
 //
 
 @import UIKit;
 @import Foundation;
 @import Typhoon;
 #import "BCVIPERModule.h"
+#import "BCVIPERProtocols.h"
+
 
 @class BCVIPERPresenter;
 @class BCVIPERInteractor;
 @class BCVIPERDataManager;
 @class BCVIPERView;
-//@class BCVIPERWireframe;
 
-#import "BCVIPERProtocols.h"
 
-@interface BCVIPERAssembly : TyphoonAssembly <BCVIPERModuleInterface>
+
+@interface BCVIPERAssembly : TyphoonAssembly
 
 -(UIViewController<BCVIPERViewProtocol> *) createVIPERView;
 

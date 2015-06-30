@@ -1,6 +1,6 @@
 //
-// Created by VIPER
-// Copyright (c) 2015 VIPER. All rights reserved.
+// Created by AUTHOR
+// Copyright (c) 2015 AUTHOR. All rights reserved.
 //
 
 #import "BCVIPERAssembly.h"
@@ -27,38 +27,40 @@
     return [TyphoonDefinition withClass:[BCVIPERView class]
                           configuration:^(TyphoonDefinition *definition)
             {
-	            [definition injectProperty:@selector(presenter) with:[self createVIPERPresenter]];
+                //	            [definition injectProperty:@selector(presenter) with:[self createVIPERPresenter]];
             }];
 }
 
 -(id<BCVIPERPresenterProtocol>) createVIPERPresenter
 {
-    return [TyphoonDefinition withClass:[BCVIPERPresenter class] configuration:^(TyphoonDefinition *definition)
+    return [TyphoonDefinition withClass:[BCVIPERPresenter class]
+                          configuration:^(TyphoonDefinition *definition)
             {
-                [definition injectProperty:@selector(view) with:[self createVIPERView]];
-                [definition injectProperty:@selector(interactor) with:[self createVIPERInteractor]];
-//                [definition injectProperty:@selector(navigator) with:[_applicationAssembly navigator]];
+                //                [definition injectProperty:@selector(view) with:[self createVIPERView]];
+                //                [definition injectProperty:@selector(interactor) with:[self createVIPERInteractor]];
+                //                [definition injectProperty:@selector(navigator) with:[_applicationAssembly navigator]];
             }];
 }
 
 -(id<BCVIPERInteractorInputProtocol>) createVIPERInteractor
 {
-    return [TyphoonDefinition withClass:[BCVIPERInteractor class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(presenter) with:[self createVIPERPresenter]];
-        [definition injectProperty:@selector(localDataManager) with:[self createVIPERDataManager]];
-    }];
+    return [TyphoonDefinition withClass:[BCVIPERInteractor class]
+                          configuration:^(TyphoonDefinition *definition)
+            {
+                //        [definition injectProperty:@selector(presenter) with:[self createVIPERPresenter]];
+                //        [definition injectProperty:@selector(localDataManager) with:[self createVIPERDataManager]];
+            }];
 }
 
 
 -(id<BCVIPERDataManagerInputProtocol>) createVIPERDataManager
 {
-    return [TyphoonDefinition withClass:[BCVIPERDataManager class] configuration:^(TyphoonDefinition *definition) {
-        
-    }];
+    return [TyphoonDefinition withClass:[BCVIPERDataManager class]
+                          configuration:^(TyphoonDefinition *definition)
+            {
+                
+            }];
 }
-
-
-
 
 
 @end

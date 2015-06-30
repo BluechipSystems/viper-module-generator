@@ -1,11 +1,14 @@
 //
-// Created by VIPER
-// Copyright (c) 2015 VIPER. All rights reserved.
+// Created by AUTHOR
+// Copyright (c) 2015 AUTHOR. All rights reserved.
 //
 
 #import "BCVIPERPresenter.h"
 #import "BCShareLockNavigator.h"
-//#import "BCVIPERWireframe.h"
+
+@interface BCVIPERPresenter()
+
+@end
 
 @implementation BCVIPERPresenter
 
