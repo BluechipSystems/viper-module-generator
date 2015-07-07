@@ -5,7 +5,7 @@
 
 @import Foundation;
 @import UIKit;
-#import "BCContactsPickerProtocols.h"
+#import "BCVIPERProtocols.h"
 
 /**
  *  Public interface for BCVIPERModule
